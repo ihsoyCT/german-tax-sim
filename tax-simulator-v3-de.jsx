@@ -588,6 +588,8 @@ export default function TaxSimulator() {
 
         <div style={{ textAlign: "center", color: C.textDim, fontSize: 10, paddingBottom: 32 }}>
           Daten: Destatis Lohn- und Einkommensteuerstatistik 2021 · Formel: §32a EStG
+          {" · "}
+          <a href="https://github.com/ihsoyCT/german-tax-sim" target="_blank" rel="noopener noreferrer" style={{ color: C.textDim, textDecoration: "underline" }}>GitHub</a>
         </div>
       </div>
     </div>
