@@ -1,1 +1,17 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Build output
+public/app.js
+
+# Logs
+npm-debug.log*
+*.log
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db

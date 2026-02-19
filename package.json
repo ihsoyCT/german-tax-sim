@@ -1,14 +1,21 @@
 {
-  "name": "tax-sim",
+  "name": "german-tax-sim",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Interactive simulator for German income tax policy (§32a EStG) based on Destatis 2021 statistics",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild main.jsx --bundle --outfile=public/app.js",
+    "build:min": "esbuild main.jsx --bundle --minify --outfile=public/app.js",
+    "dev": "esbuild main.jsx --bundle --outfile=public/app.js --watch",
+    "serve": "npx serve public"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["tax", "germany", "simulator", "einkommensteuer", "react"],
+  "author": "ihsoyCT",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ihsoyCT/german-tax-sim.git"
+  },
+  "homepage": "https://github.com/ihsoyCT/german-tax-sim#readme",
   "dependencies": {
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
