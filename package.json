@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Interactive simulator for German income tax policy (§32a EStG) based on Destatis 2021 statistics",
   "scripts": {
-    "build": "esbuild main.jsx --bundle --outfile=public/app.js",
-    "build:min": "esbuild main.jsx --bundle --minify --outfile=public/app.js",
-    "dev": "esbuild main.jsx --bundle --outfile=public/app.js --watch",
+    "build": "esbuild main.jsx --bundle --jsx=automatic --outfile=public/app.js",
+    "build:min": "esbuild main.jsx --bundle --jsx=automatic --minify --outfile=public/app.js",
+    "dev": "esbuild main.jsx --bundle --jsx=automatic --outfile=public/app.js --watch",
     "serve": "npx serve public"
   },
   "keywords": ["tax", "germany", "simulator", "einkommensteuer", "react"],
